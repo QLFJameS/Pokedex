@@ -1,0 +1,5 @@
+<div id="pokemons">
+@for (pokemon of pokemons; track pokemon.id){
+    <app-pokemon-card routerLink="/pokemon-details/{{pokemon.id}}" [pokemon]="pokemon"></app-pokemon-card>
+}
+</div>
